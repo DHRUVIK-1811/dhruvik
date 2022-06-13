@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{       int x,y;
+	clrscr();
+	printf("Enter X: ");
+	scanf("%d",&x);
+	printf("Enter Y: ");
+	scanf("%d",&y);
+
+	if(x<2000 || X>3000)
+	{
+		printf("\nX= %d",x);
+	}
+	if(Y>100 && Y<500)
+	{
+		printf("\nY= %d",y);
+	}
+
+	getch();
+}

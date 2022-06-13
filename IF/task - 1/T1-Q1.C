@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{       int u;
+	float rs,t,a;
+	clrscr();
+	printf("Enter Unit:");
+	scanf("%d",&u);
+	if(u<=100)
+	{       rs=u*0.60+50;
+		printf("Bill:%f",rs);
+	}
+	else if(u>100 && u<=300)
+	{
+		rs=60+50+((u-100)*0.80);
+		printf("Bill:&f",rs);
+	}
+	else
+	{
+		rs=220+50+((u-300)*0.90);
+		if(rs>300)
+		{
+			a=rs*0.15;
+			t=rs+a;
+			printf("Bill:%f",t);
+		}
+		else
+		{
+			printf("Bill:%f",rs);
+		}
+	}
+	getch();
+}
